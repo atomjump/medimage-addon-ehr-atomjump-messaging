@@ -1,73 +1,79 @@
 {
-	"photoPathMatch": "(.*)\\\\(.*)\\\\(.*).jpg",
-	"photoVars": ["parentphotodir", "NHID", "photoname"],
-	"testConnectionQuery": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap12:Envelope xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\n  <soap12:Body>\n    <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\n      <ubiNum>10</ubiNum>\n    </NumberToWords>\n  </soap12:Body>\n</soap12:Envelope>",
-	"testConnectionShowField": "",
-	"createUserQuery": "",	
-	"getIdQuery": "",
-	"insertAttachmentQuery": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap12:Envelope xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\n  <soap12:Body>\n    <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\n      <ubiNum>10</ubiNum>\n    </NumberToWords>\n  </soap12:Body>\n</soap12:Envelope>",
-	"host": "localhost",
-	"dbname": "C:\\MT32\\data\\MT32.ib",
-	"username": "SYSDBA",
-	"password": "masterkey",
-	"staffname": "#sys",
-	"computer": "",
-	"localFolderMapDown": "C:\\mt32\\",
-	"mapDownTo": "M:\\",
-	"location": "M",
-	"useResized": false,
-	"useOriginal": true,
-	"parentPhotoDir": "C:\\MT32\\Attachments",
-	"useODBC": true,
-	"requestType": "soap",
-	"endPoints": {
-		"testConnection": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
-		"getId": "",
-		"insertAttachment": "http://www.dataaccess.com/webservicesserver/NumberConversion.wso",
-		"includePhotoInPOST": false,
-		"httpMethod": "POST",
-		"ssl": true,
-		"sslCertFile": "",
-		"timeoutFailureMs": 2000,
-		"headers": [ "Content-type: text/xml;charset=\"utf-8\"",
-                       "Accept: text/xml",
-                        "Cache-Control: no-cache",
-                        "Pragma: no-cache",
-                        "SOAPAction:", 
-                        "Content-length: [contentLength]" ]
-	},
-	"responseObjects": {
-		"testConnection": {
-			"success" :	"Body.NumberToWordsResponse.NumberToWordsResult",
-			"successValue": "ten "	
-		},
-		"getId": {
-			"success" :	"",
-			"successValue": "",
-			"returnedValue" : "",
-			"duplicate" : "",
-			"duplicateValue": ""
-		},
-		"insertAttachment" :{
-			"success" :	"Body.NumberToWordsResponse.NumberToWordsResult",
-			"successValue": "ten "
-		}
-	},		
-	"dsnHere": "medtech32",
-	"logging": true,
-	"capitaliseNHID": true,
-	"dbCurrentTimeQuery": "",
-	"constraints": {
-		"patientID": 7,
-		"photoName": 100,
-		"staffname": 4,
-		"computer": 15,
-		"location": 1,
-		"fullphotopath": 255	
-	},
-	"createUserHelp": "",
-	"createUserHelpFull": "",
-	"odbcUserHelp": ""
-	
-	 
+      "requestType": "json",
+      "timeOutSeconds": 2,
+      "endPoints": {
+            "testConnection": "https%3A%2F%2Fatomjump.com%2Fapi%2Fplugins%2Finserter%2Findex.php",
+            "getId": "",
+            "insertAttachment": "https%3A%2F%2Fatomjump.com%2Fapi%2Fplugins%2Finserter%2Findex.php%3Fforum%3Dajps_villagehealth-demo%26msg%3DPatient%3A%2B%5BpatientID%5D.%2B%2BPhoto%3A%2B%5Bphotoname%5D%2Bhttp%253A%252F%252F35.244.84.80%252Fimages%252Fphotos%252F%5BpatientID%5D%252F%5Bphotoname%5D.jpg%26code%3D2498jfknf-24598h43fkjnsetkj",
+            "includePhotoInPOST": true,
+            "httpMethod": "GET",
+            "ssl": true,
+            "sslCertFile": "",
+            "timeoutFailureMs": 5000,
+            "headers": [
+                  "Content-type: application/json;charset=\"utf-8\"",
+                  "Accept: application/json",
+                  "Cache-Control: no-cache",
+                  "Pragma: no-cache",
+                  "Content-length: [contentLength]"
+            ]
+      },
+      "responseObjects": {
+            "testConnection": {
+                  "success": "success",
+                  "successValue": "false"
+            },
+            "getId": {
+                  "success": "success",
+                  "successValue": false,
+                  "returnedValue": "",
+                  "sessionValue": "",
+                  "duplicate": "",
+                  "duplicateValue": ""
+            },
+            "insertAttachment": {
+                  "success": "success",
+                  "successValue": true
+            }
+      },
+      "parentPhotoDir": "C:\\medimage\\public\\images\\photos",
+      "useResized": true,
+      "useOriginal": false,
+      "photoPathMatch": "(.*)\\\\(.*)\\\\(.*).jpg",
+      "photoVars": [
+            "parentphotodir",
+            "NHID",
+            "photoname"
+      ],
+      "testConnectionQuery": "https://atomjump.com/api/plugins/inserter/index.php",
+      "createUserQuery": "",
+      "testConnectionShowField": "",
+      "dbCurrentTimeQuery": "",
+      "getIdQuery": "",
+      "insertAttachmentQuery": "",
+      "host": "localhost",
+      "dbname": "C:\\MT32\\data\\MT32.ib",
+      "username": "SYSDBA",
+      "password": "masterkey",
+      "staffname": "#sys",
+      "computer": "",
+      "localFolderMapDown": "C:\\mt32\\",
+      "mapDownTo": "M:\\",
+      "location": "C",
+      "useODBC": true,
+      "logging": true,
+      "capitaliseNHID": true,
+      "dsnHere": "ehrconnect",
+      "errorNotificationURL": "",
+      "constraints": {
+            "patientID": 40,
+            "photoName": 100,
+            "staffname": 4,
+            "computer": 15,
+            "location": 1,
+            "fullphotopath": 255
+      },
+      "createUserHelp": "<p>You can do this <b>manually</b>, <b>or</b> sometimes via your <b>ODBC driver</b> under e.g. 'Services/Users/Add User'.</p><p>To do this <i>manually</i>:</p><p>1. Bring up your SQL console and connect to the EHR database (typically with your system username and password)</p><p>2. Run a SQL query similar to this (depending on your database type):</p><pre>CREATE USER MEDIMAGE SET PASSWORD 'masterkey';</pre><p>3. Click the 'Switch to MEDIMAGE user' button below.</p>",
+      "createUserHelpFull": "<p>You can do this <b>manually</b>, <b>or</b> via some ODBC drivers. After a successful connection using the system user, you will be <b>given an option</b> to switch to the MEDIMAGE user (which will give all correct permissions to that user).</p><p>To do this <i>manually</i>:</p><p>1. Bring up your database SQL console and connect to the EHR database (typically with the system user and password)</p><p>2. Run similar SQL queries to the following (this will vary depending on your database type):</p><pre>CREATE USER MEDIMAGE SET PASSWORD 'masterkey';GRANT ALL ON ATTACHMENTSMGR TO MEDIMAGE;GRANT SELECT ON PATIENT TO MEDIMAGE;GRANT SELECT ON ANYBODY TO MEDIMAGE;</pre><p>3. Set the username to 'MEDIMAGE' above.</p>",
+      "odbcUserHelp": "<div class=\"panel panel-default\"> <div class=\"panel-heading\">Connecting with ODBC</div><div class=\"panel-body\"><p>1. Enter 'ODBC sources 32-bit' or 'ODBC sources 64-bit' in your Windows Start bar, choose your EHR's database driver, and create a new 'System DSN' (not a 'User DSN').</p><div class=\"table-responsive\"><table class=\"table table-striped table-bordered table-hover\"><thead><tr><th>Field</th><th>Example Values</th></tr></thead><tbody><tr><td>Data Source Name (DSN)</td><td><b>medtech32</b></td></tr><tr><td>Database</td><td><b>localhost:1234</b></td></tr><tr><td>Database Account</td><td><b>sysadmin</b></td></tr><tr><td>Password</td><td><b>yourpass</b></td></tr></tbody></table></div><p>2. Fill out the details above, and click 'Test Connection', or the equivalent in your driver.</p><p>3. Enter the 'DSN' name i.e. 'medtech32' into the 'ODBC Database DSN name' field above. Click 'Save and Check Connection' below.</p></div><div class=\"panel-footer text-muted\"></div></div>"
 }
