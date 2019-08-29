@@ -26,7 +26,7 @@ https://yourserver.com/atomjump-messaging-path/plugins/inserter/index.php
 Example Insert attachment endpoint:
 E.g.
 ```
-https://atomjump.com/api/plugins/inserter/index.php?forum=ajps_changeme-demo&msg=Patient:+[patientID].++Photo:+[photoname]+http%3A%2F%2F35.244.84.80%2Fimages%2Fphotos%2F[patientID]%2F[photoname].jpg&code=249856hhgf-2ytyghhvdjnsetkj
+https://atomjump.com/api/plugins/inserter/index.php?forum=ajps_changeme-demo&msg=Patient:%20[patientID].%20Photo:%20[photoname]+http%3A%2F%2F35.244.84.80%2Fimages%2Fphotos%2F[patientID]%2F[photoname].jpg&code=249856hhgf-2ytyghhvdjnsetkj
 ```
 
 But remember you should use the same path to your installation of AtomJump
@@ -37,7 +37,7 @@ at the start of this attachment endpoint.
 
 A 'URL decoded' version of the msg parameter, above, is:
 ```
-Patient:+[patientID].++Photo:+[photoname]+http://35.244.84.80/images/photos/[patientID]/[photoname].jpg&code=249856hhgf-2ytyghhvdjnsetkj
+Patient: [patientID].  Photo: [photoname] http://35.244.84.80/images/photos/[patientID]/[photoname].jpg&code=249856hhgf-2ytyghhvdjnsetkj
 ```
 
 To explain this: the first section is the text to appear in the message (and [patientID] gets written over with the ID itself, as does [photoname] with the photo’s name). The URL after http is the web address of the Windows server holding the EHR Connector, and the photos are served up by the MedImage Server on that server, which is accessible remotely.
