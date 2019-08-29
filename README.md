@@ -1,5 +1,10 @@
-# medimage-addon-ehr-soaptest
-A testing configuration against a sample AtomJump messaging forum page.
+# medimage-addon-ehr-atomjump-messaging
+
+Send a photo directly from the MedImage app to a single AtomJump Messaging forum.
+
+# AtomJump Server Setup
+
+You should install the normal AtomJump Messenger Server. Then install the 'Inserter' plugin from http://atomjump.org/wp/inserter/ 
 
 # MedImage Server Setup
 
