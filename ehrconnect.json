@@ -4,7 +4,7 @@
       "endPoints": {
             "testConnection": "https%3A%2F%2Fatomjump.com%2Fapi%2Fplugins%2Finserter%2Findex.php",
             "getId": "",
-            "insertAttachment": "https%3A%2F%2Fatomjump.com%2Fapi%2Fplugins%2Finserter%2Findex.php%3Fforum%3Dajps_villagehealth-demo%26msg%3DPatient%3A%2B%5BpatientID%5D.%2B%2BPhoto%3A%2B%5Bphotoname%5D%2Bhttp%253A%252F%252F35.244.84.80%252Fimages%252Fphotos%252F%5BpatientID%5D%252F%5Bphotoname%5D.jpg%26code%3D2498jfknf-24598h43fkjnsetkj",
+            "insertAttachment": "https%3A%2F%2Fatomjump.com%2Fapi%2Fplugins%2Finserter%2Findex.php%3Fforum%3Dajps_yourpracticeCHANGEME%26msg%3DPatient%3A%2B%5BpatientID%5D.%2B%2BPhoto%3A%2B%5Bphotoname%5D%2Bhttp%253A%252F%252FYOUR.SERVER.IP.ADDRESS%252Fimages%252Fphotos%252F%5BpatientID%5D%252F%5Bphotoname%5D.jpg%26code%3D2498jfknf-24598h43fkjnsetkj",
             "includePhotoInPOST": true,
             "httpMethod": "GET",
             "ssl": true,
