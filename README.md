@@ -42,6 +42,6 @@ Patient: [patientID].  Photo: [photoname] http://35.244.84.80/images/photos/[pat
 
 To explain this: the first section is the text to appear in the message (and [patientID] gets written over with the ID itself, as does [photoname] with the photo’s name). The URL after http is the web address of the Windows server holding the EHR Connector, and the photos are served up by the MedImage Server on that server, which is accessible remotely.
 
-Important Note: the whole system should ideally be on an intranet, to ensure security over access to the photos. Our demo is not secure, and the photo security is purely “security via obscurity”.
+__Important Note:__ the whole system should ideally be on an intranet, to ensure security over access to the photos. Our demo is not secure, and the photo security is purely “security via obscurity”.
 
 
