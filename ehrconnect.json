@@ -60,7 +60,7 @@
       "localFolderMapDown": "",
       "mapDownTo": "",
       "location": "C",
-      "useODBC": false,
+      "useODBC": true,
       "logging": true,
       "capitaliseNHID": true,
       "dsnHere": "",
