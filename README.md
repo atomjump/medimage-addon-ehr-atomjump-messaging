@@ -18,9 +18,9 @@ You should
 
 # EHR Connector Setup
 
-Request Style: Use JSON
+On the EHR Connector settings tab within the MedImage Server:
 
-Then under ‘Show Endpoint SOAP/JSON Options’
+Under ‘Show Endpoint SOAP/JSON Options’
 
 Example check connection endpoint:
 ```
@@ -49,8 +49,8 @@ A 'URL decoded' version of the msg parameter, above, is:
 Patient: [patientID].  Photo: [photoname] http://35.244.84.80/images/photos/[patientID]/[photoname].jpg&code=249856hhgf-2ytyghhvdjnsetkj
 ```
 
-To explain this: the first section is the text to appear in the message (and [patientID] gets written over with the ID itself, as does [photoname] with the photo’s name). The URL after http is the web address of the Windows server holding the EHR Connector, and the photos are served up by the MedImage Server on that server, which is accessible remotely.
+Explanation: the first section is the text to appear in the message (and [patientID] gets written over with the ID itself, as does [photoname] with the photo’s name). The URL after 'http' is the web address of the Windows server holding the EHR Connector, and the photos are served up by the MedImage Server on that server, which is accessible remotely within the intranet.
 
-__Important Note:__ the whole system should ideally be on an intranet, to ensure security over access to the photos. Our demo is not secure, and the photo security is purely “security via obscurity”.
+__Important Note:__ the whole system should ideally be on an intranet, rather than the wider internet, to ensure photo access security.
 
 
