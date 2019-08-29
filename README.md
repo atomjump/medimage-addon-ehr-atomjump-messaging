@@ -14,6 +14,7 @@ You should
 1. Open port 80 on the server holding the MedImage Server, or ideally a secure port, 443.
 2. Change the C:\MedImage\config.json, 'listenPort' figure to the port above, and restart the MedImage service
 3. Change the target photo folder in MedImage settings to C:\MedImage\public\image\photos, to make the photos publicly visible
+4. Install this add-on using the latest release from https://github.com/atomjump/medimage-addon-ehr-atomjump-messaging/releases and copying / pasting the .zip file into your MedImage Server 'Install Add-ons' settings page.
 
 # EHR Connector Setup
 
