@@ -4,12 +4,15 @@ Send a photo directly from the MedImage app to a single AtomJump Messaging forum
 
 # AtomJump Server Setup
 
-You should install the normal AtomJump Messenger Server. Then install the 'Inserter' plugin from http://atomjump.org/wp/inserter/ 
+You should
+
+1. Install the AtomJump Messenger Server from http://atomjump.org/wp/server-installation-guide/
+2. Then install the 'Inserter' plugin from http://atomjump.org/wp/inserter/ 
 
 # MedImage Server Setup
 
 1. Open port 80 on the server holding the MedImage Server, or ideally a secure port, 443.
-2. Change the C:\MedImage\config.json, listenPort figure to the port above, and restart the MedImage service
+2. Change the C:\MedImage\config.json, 'listenPort' figure to the port above, and restart the MedImage service
 3. Change the target photo folder in MedImage settings to C:\MedImage\public\image\photos, to make the photos publicly visible
 
 # EHR Connector Setup
