@@ -2,12 +2,12 @@
   "author": "AtomJump.com",
   "name": "ehr-atomjump-messaging",
   "description": "Send photos from the Medimage app to an AtomJump Messaging forum, using the EHR Connector Add-on for MedImage",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "private": false,
   "license": "MIT License",
   "successMessages": {
   	"all": {
-  		"main": "Your installation was successful. You should now configure your connection paths to your private AtomJump server. Please read the <a href=\"https://github.com/atomjump/medimage-addon-ehr-atomjump-messaging/\">full instructions</a>. Click the 'EHR Connector' tab to get started.",
+  		"main": "Your installation was successful. You should now configure your connection paths to your private AtomJump server. Please read the full user guide link on the medimage.co.nz EHR Connector pages. Click the 'EHR Connector' tab to get started.",
   		"extended": ""
   	}
   },
