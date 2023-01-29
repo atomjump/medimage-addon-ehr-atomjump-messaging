@@ -1,5 +1,7 @@
 # medimage-addon-ehr-atomjump-messaging
 
+__WARNING: this project has now moved to https://src.atomjump.com/atomjump/medimage-addon-ehr-atomjump-messaging.git__
+
 Send a photo directly from the MedImage app to a single AtomJump Messaging forum.
 
 # AtomJump Server Setup
